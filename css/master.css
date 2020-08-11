@@ -1,3 +1,7 @@
+:root {
+    --main-color: #ff9800;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -6,7 +10,7 @@ body {
 
 .landing-page {
     min-height: 100vh;
-    background-image: url('../imgs/img02.jpg');
+    background-image: url('../imgs/img01.jpg');
     background-size: cover;
     position: relative;
 }
@@ -20,5 +24,71 @@ body {
     top: 0;
     z-index: 1;
 }
+
+.header-area {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    display: flex;
+    padding: 10px;
+}
+
+.header-area .logo {
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.header-area .links {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.header-area .links li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header-area .links li a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.header-area .links li a:hover,
+.header-area .links li a.active
+{
+    color: var(--main-color)
+}
+
+.intrdoction-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 2;
+    text-align: center;
+}
+
+.intrdoction-text h1 {
+font-size: 34px;
+margin: 0 0 12px;
+}
+
+.intrdoction-text h1 span {
+    color: var(--main-color)
+}
+
+.intrdoction-text p {
+line-height: 1.6;
+font-size: 20px;
+margin: 0;
+}
+
 
 /*End Landing Page */
